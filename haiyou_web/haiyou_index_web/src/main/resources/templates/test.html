@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="/js/vue.js"></script>
+    <link rel="stylesheet" href="/js/index.css">
+    <script src="/js/index.js"></script>
+    <script src="/js/axios-0.18.0.js"></script>
+</head>
+
+
+<body>
+<div id="app">
+    <template>
+        <el-table
+                :data="tableData"
+                style="width: 100%">
+            <el-table-column
+                    prop="id"
+                    label="ID"
+                    width="180">
+            </el-table-column>
+            <el-table-column
+                    prop="companyName"
+                    label="公司名称"
+                    width="180">
+            </el-table-column>
+            <el-table-column
+                prop="sampleName"
+                label="样品名称"
+                width="180">
+        </el-table-column>
+            <el-table-column
+                prop="value"
+                label="样品值"
+                width="180">
+        </el-table-column>
+            <el-table-column
+                    prop="unit"
+                    label="单位"
+                    width="180">
+            </el-table-column>
+            <el-table-column
+                    prop="remark"
+                    label="备注"
+                    width="180">
+            </el-table-column>
+            <el-table-column
+                    prop="updateTime"
+                    label="更新时间"
+                    width="180">
+            </el-table-column>
+            <el-table-column
+                    prop="addTime"
+                    label="添加时间">
+            </el-table-column>
+        </el-table>
+
+    </template>
+</div>
+<script>
+    new Vue({
+        el: "#app",
+        data: {
+            tableData: []
+        },
+        created() {
+            this.findUser();
+        },
+        methods: {
+            findUser() {
+                axios.get("/search/data").then((res) => {
+                    console.log(res.data);
+                    this.tableData=res.data.data
+                })
+            }
+        }
+
+    })
+</script>
+</body>
+</html>
