@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/haiyou_commondb"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/haiyou_common"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:2.1.1.RELEASE"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.springframework.cloud:spring-cloud-starter:2.1.1.RELEASE"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.springframework.cloud:spring-cloud-context:2.1.1.RELEASE"/>
@@ -131,5 +129,14 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: tk.mybatis:mapper-extra:1.0.5"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: tk.mybatis:mapper-spring-boot-autoconfigure:2.0.4"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: mysql:mysql-connector-java:8.0.15"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/haiyou_common"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/haiyou_commondb"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/haiyou"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/haiyou_db_service"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/haiyou_db_service_api"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/haiyou_eurka"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/haiyou_index_web"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/haiyou_service_api"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/haiyou_web"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
